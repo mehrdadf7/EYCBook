@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Equipment Images</title>
+</head>
+<body>
+
+    {% for fav_equ in fav_equ_images %}
+            <h2>{{ fav_equ.title }}</h2>
+        <img src="{% static "images/placeholder.jpg" %}" />
+    {% endfor %}
+
+</body>
+</html>
